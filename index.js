@@ -1,21 +1,21 @@
 // Code your solution in this file!
-function distanceFromHqInBlocks(pickupLocation) {
-  const hqLocation = 42;
-  const distanceInBlocks = Math.abs(pickupLocation - hqLocation);
+function distanceFromHqInBlocks(block) {
+  const hq = 42;
+  const distanceInBlocks = Math.abs(block- hq);
   return distanceInBlocks;
 }
 
 
-function distanceFromHqInFeet(pickupLocation) {
-  const blockLength = 264; 
-  const distanceInBlocks = distanceFromHqInBlocks(pickupLocation);
-  const distanceInFeet = distanceInBlocks * blockLength;
+function distanceFromHqInFeet(feet) {
+  const length = 264; 
+  const distanceInBlocks = distanceFromHqInBlocks(feet);
+  const distanceInFeet = distanceInBlocks * length;
   return distanceInFeet;
 }
-function distanceTravelledInFeet(startBlock, endBlock) {
-  const blockLength = 264; 
-  const distanceInBlocks = Math.abs(endBlock - startBlock);
-  const distanceInFeet = distanceInBlocks * blockLength;
+function distanceTravelledInFeet(start, destination) {
+  const length = 264; 
+  const distanceInBlocks = Math.abs(start - destination);
+  const distanceInFeet = distanceInBlocks * length;
   return distanceInFeet;
 }
 function calculatesFarePrice(start, destination) {
